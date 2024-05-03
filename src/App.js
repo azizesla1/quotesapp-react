@@ -7,13 +7,11 @@ import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { myContext } from "./context";
 
-/**
- * Represents the main component of the application.
- * 
- */
 function App() {
   const { fechdata, isDark } = useContext(myContext);
     
+  // func dir haja rah tji ki ndir refresh lpage li rani fiha
+  // hi
   useEffect(function Dirhja() { 
     fechdata();
   }, []);
